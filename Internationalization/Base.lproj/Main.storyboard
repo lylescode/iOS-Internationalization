@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Gy-DF-NUY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Zbi-L9-FSQ">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="5Gy-DF-NUY" customClass="ViewController" customModule="Internationalization" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="be3-dr-1YM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZx-q3-KbV">
+                                <rect key="frame" x="16" y="54" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w27-GL-w9a">
+                                <rect key="frame" x="16" y="83" width="131" height="30"/>
+                                <state key="normal" title="Internationalization"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="5Gy-DF-NUY" eventType="touchUpInside" id="G6l-ZG-KKC"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rJL-Ww-gi2">
+                                <rect key="frame" x="16" y="131" width="343" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="WYx-Js-1ZA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vIl-8E-tHT" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HZx-q3-KbV" secondAttribute="trailing" symbolic="YES" id="3W9-Fc-iPg"/>
+                            <constraint firstItem="HZx-q3-KbV" firstAttribute="leading" secondItem="vIl-8E-tHT" secondAttribute="leading" constant="16" id="NVc-Vn-aPP"/>
+                            <constraint firstItem="w27-GL-w9a" firstAttribute="top" secondItem="HZx-q3-KbV" secondAttribute="bottom" constant="8" id="Re9-Ka-ncC"/>
+                            <constraint firstItem="w27-GL-w9a" firstAttribute="leading" secondItem="vIl-8E-tHT" secondAttribute="leading" constant="16" id="XJJ-Iq-han"/>
+                            <constraint firstItem="HZx-q3-KbV" firstAttribute="top" secondItem="vIl-8E-tHT" secondAttribute="top" constant="34" id="igj-Qy-q7J"/>
+                            <constraint firstItem="vIl-8E-tHT" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="w27-GL-w9a" secondAttribute="trailing" symbolic="YES" id="jQB-wy-pRX"/>
+                            <constraint firstItem="rJL-Ww-gi2" firstAttribute="leading" secondItem="vIl-8E-tHT" secondAttribute="leading" constant="16" id="jTf-6p-sVj"/>
+                            <constraint firstItem="vIl-8E-tHT" firstAttribute="trailing" secondItem="rJL-Ww-gi2" secondAttribute="trailing" constant="16" id="qQ1-Z4-WZA"/>
+                            <constraint firstItem="rJL-Ww-gi2" firstAttribute="top" secondItem="w27-GL-w9a" secondAttribute="bottom" constant="18" id="y39-qJ-Spw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vIl-8E-tHT"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="rJL-Ww-gi2" id="raV-bS-tVs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WEH-qp-P4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>

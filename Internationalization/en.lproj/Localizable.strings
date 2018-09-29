@@ -1,0 +1,7 @@
+/* 
+  Localizable.strings
+  Internationalization
+
+  Created by CMR on 29/09/2018.
+*/
+"You have sold 1000 apps in %d months" = "Has vendido %@ aplicaciones en %d meses";
